@@ -78,7 +78,7 @@ def execute_mcp_tool(tool_name: str, arguments: dict, server_url: str = None) ->
 st.sidebar.header("Mesh Parameters")
 selected_model = st.sidebar.selectbox(
     "Groq Model",
-    ["llama-3.3-70b-versatile", "llama-3.1-8b-instant", "mixtral-8x7b-32768"]
+    ["llama-3.3-70b-versatile", "openai/gpt-oss-120b", "mixtral-8x7b-32768"]
 )
 temperature = st.sidebar.slider("Inference Temperature", 0.0, 1.0, 0.3)
 use_mcp = st.sidebar.checkbox("Enable MCP Tool Context", value=True)
