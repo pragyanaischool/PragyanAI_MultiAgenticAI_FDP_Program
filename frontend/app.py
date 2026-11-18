@@ -11,7 +11,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("⚡ Groq Agentic Mesh with MCP & A2A")
+st.title("Pragyan AI - Groq Agentic Mesh with MCP & A2A")
 st.markdown("Ultra-low-latency AI agent architecture powered by Groq LPUs, Model Context Protocol (MCP) tool servers, and Streamlit.")
 
 # --- 1. Secure API Key & Configuration Retrieval from st.secrets ---
@@ -93,7 +93,7 @@ user_query = st.text_area(
 col_action1, col_action2 = st.columns([1, 4])
 
 with col_action1:
-    run_workflow = st.button("🚀 Run Workflow", type="primary", use_container_width=True)
+    run_workflow = st.button(" Run Workflow", type="primary", use_container_width=True)
 
 if run_workflow:
     if not user_query.strip():
